@@ -1,0 +1,14 @@
+{
+  "name": "package_json",
+  "version": "1.0.0",
+  "description": "testando o init",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "joomaciiel",
+  "license": "ISC"
+}
