@@ -7,6 +7,7 @@ const path = require('path');
 
 //aqui vai pra uma static folder qualquer (alias), esconder nome da folder
 //__dirname vai pega nosso app.js (directory name), onde estamos.
+//vai mudar o nome da static pra public, no browser.
 app.use('/public', express.static(path.join(__dirname, 'static')));
 
 //rota
