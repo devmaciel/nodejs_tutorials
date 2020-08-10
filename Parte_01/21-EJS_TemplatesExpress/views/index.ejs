@@ -1,0 +1,18 @@
+<h1>mesma coisa que o html do form</h1>
+
+<h1>You searched for : <%= data.userQuery %> </h1>
+<% if(data.loggedIn){ %>
+    <h2>Você está logado como: <%= data.username %></h2>
+<% } %>
+<ul>
+    <% data.searchResults.forEach(result=>{ %>
+        <li><%= result %></li>
+    <% }); %> 
+
+    <!-- <li><%= data.searchResults[0] %></li>
+    <li><%= data.searchResults[1] %></li>
+    <li><%= data.searchResults[2] %></li> -->
+
+    <!-- <li>dummy data</li>
+    <li>dummy data</li> -->
+</ul>
