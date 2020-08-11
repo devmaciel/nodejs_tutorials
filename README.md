@@ -1,4 +1,4 @@
-# **NodeJS Beginner**
+# **NodeJS Beginner Só Q N**
 
 playlist de aulas[ freeCodeCamp](https://www.youtube.com/playlist?list=PLWKjhJtqVAbmGQoa3vFjeRbRADAOC9drk " freeCodeCamp") de nodejs.
 
