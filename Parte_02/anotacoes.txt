@@ -1,0 +1,38 @@
+//=============================================================
+// Anotações - ExpressJS & NodeJS Course for Beginners
+//-----------------------------------
+
+Baixar NVM (Node Version Manager)
+https://github.com/nvm-sh/nvm
+
+Só colar no shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+nvm install <version>
+-----------------------------
+
+Baixar Express
+(nessa ele baixar o express generator)
+npm install express-generator -g
+
+Iniciando com o APP:
+express --view=pug myapp    (pug é o html template)
+
+aqui pode dar um erro no script de regularidade.
+aqui tem o initial commit das aulas.
+https://github.com/buzz-software/expressjs-mvp-landing-page/tree/ef5ad58304132436fecf2706c0085d9caea241c2
+-------------------------------
+
+Baixar as Dependências
+npm install
+
+vai baixar tudo que estamos utilizando mesmo com node_modules.
+e resolver as vulnerabilidades das dependencias. geralmente as versões do package.json
+nada que um npm audit não te ajude.
+--------------------------------------
+
+Começando o Server Local
+
+npm start
+---------------------------------
+
