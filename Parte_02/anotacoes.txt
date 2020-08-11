@@ -36,3 +36,29 @@ Começando o Server Local
 npm start
 ---------------------------------
 
+Baixar nodemon..
+
+uma ferramenta para desenvolvimento apenas
+ela ajuda no desenvolvimento, monitorando nossos changes
+e não precisando reiniciar toda hora o server a cada change.
+
+npm install nodemon --save-dev
+
+"o --save-dev são as dependências que só vão para development
+em produção não são ativas, embora vamos ter que trocar o script
+pra starta com nodemon"
+
+OBS: no vídeo ele fez isto, porém está dando erro
+"scripts": {
+    "start": "if [[ $NODE_ENV == 'production' ]]; then node ./bin/www; else nodemon ./bin/www; fi"
+  }
+
+Então deixa start depois muda, ou coloca start com dev:
+"scripts": {
+   "start": "node ./bin/www",
+   "dev": "nodemon ./bin/www"
+ },
+
+ e utiliza 'npm run dev'
+---------------------------------
+
