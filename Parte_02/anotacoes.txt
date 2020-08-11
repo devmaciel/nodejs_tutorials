@@ -2,21 +2,25 @@
 // Anotações - ExpressJS & NodeJS Course for Beginners
 //-----------------------------------
 
+obs: pula essa parte se está no windows, nvm é só do mac.
+  então baixar node normalmente pra windows e pula aqui.
+
 Baixar NVM (Node Version Manager)
 https://github.com/nvm-sh/nvm
 
 Só colar no shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-nvm install <version>
+  nvm install <version>
+
 -----------------------------
 
 Baixar Express
 (nessa ele baixar o express generator)
-npm install express-generator -g
+  npm install express-generator -g
 
 Iniciando com o APP:
-express --view=pug myapp    (pug é o html template)
+  express --view=pug myapp    (pug é o html template)
 
 aqui pode dar um erro no script de regularidade.
 aqui tem o initial commit das aulas.
@@ -24,7 +28,7 @@ https://github.com/buzz-software/expressjs-mvp-landing-page/tree/ef5ad5830413243
 -------------------------------
 
 Baixar as Dependências
-npm install
+  npm install
 
 vai baixar tudo que estamos utilizando mesmo com node_modules.
 e resolver as vulnerabilidades das dependencias. geralmente as versões do package.json
@@ -33,7 +37,7 @@ nada que um npm audit não te ajude.
 
 Começando o Server Local
 
-npm start
+  npm start
 ---------------------------------
 
 Baixar nodemon..
@@ -42,23 +46,59 @@ uma ferramenta para desenvolvimento apenas
 ela ajuda no desenvolvimento, monitorando nossos changes
 e não precisando reiniciar toda hora o server a cada change.
 
-npm install nodemon --save-dev
+  npm install nodemon --save-dev
 
 "o --save-dev são as dependências que só vão para development
 em produção não são ativas, embora vamos ter que trocar o script
 pra starta com nodemon"
 
 OBS: no vídeo ele fez isto, porém está dando erro
-"scripts": {
-    "start": "if [[ $NODE_ENV == 'production' ]]; then node ./bin/www; else nodemon ./bin/www; fi"
-  }
+  "scripts": {
+      "start": "if [[ $NODE_ENV == 'production' ]]; then node ./bin/www; else nodemon ./bin/www; fi"
+    }
 
 Então deixa start depois muda, ou coloca start com dev:
-"scripts": {
-   "start": "node ./bin/www",
-   "dev": "nodemon ./bin/www"
- },
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
 
  e utiliza 'npm run dev'
+---------------------------------
+
+POSTGRESQL
+ele utiliza packmanager do mac os.. homebrew. então.. fu.
+existe o node-postgres porém, teria que estudar mais a fundo, então
+o certo seria utilizar o xampp e utilizar phpmyadmin com mariadb. que é o mais simples.
+
+porém, na aula ele utiliza o sequelize. que é um ORM do Postgres.
+Então vamos lá...
+
+primeiro vamos ter que baixar então o postgree com instalador, pra sua máquina.
+no meu caso windows. depois o sequelize ORM, e o driver da database que utiliza.
+obs: não baixei o pgserver, só a interface/requires, mas vou utilizar o xampp.
+
+  npm install --save sequelize
+  npm install --save pg pg-hstore
+
+obs: no caso se utilizar o xampp.
+  npm install --save mariadb
+  
+depois por fim, o command line (CLI) do sequelize.
+  npm install sequelize-cli -g
+----------------------------
+
+SEQUELIZE 
+
+  sequelize init 
+
+obs: não lembro se tinha dado erro de restrição porém:
+https://pt.stackoverflow.com/questions/220078/o-que-significa-o-erro-execução-de-scripts-foi-desabilitada-neste-sistema
+
+Aqui é preciso setar as politicas para remotesigned, depois volta se quiser pra restricted, caso haja erro.
+criação de script com sequelize, vai executar script pra criar as pastas.
+
+  sequelize db:migrate
+
 ---------------------------------
 
