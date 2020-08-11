@@ -13,5 +13,6 @@ router.get('/leads', landing.show_leads);
 router.get('/lead/:lead_id', landing.show_lead);
 router.get('/lead/:lead_id/edit', landing.show_edit_lead);
 router.post('/lead/:lead_id/edit', landing.edit.lead);
+router.post('/lead/:lead_id/delete', landing.delete.lead);
 
 module.exports = router;

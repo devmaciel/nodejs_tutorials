@@ -21,6 +21,8 @@ exports.submit_lead = function(req, res, next) {
 
 }
 
+//=====================================================
+// SHOW
 exports.show_leads = function(req, res, next) {
   models.Lead.findAll().then(leads =>{
     res.render('landing', {title: 'Curso ExpressJS & NodeJS', leads: leads});
@@ -28,7 +30,6 @@ exports.show_leads = function(req, res, next) {
 }
 
 exports.show_lead = function(req, res, next) {
-
   return models.Lead.findOne({
     where: {
       id: req.params.lead_id
@@ -38,8 +39,9 @@ exports.show_lead = function(req, res, next) {
   });
 }
 
+//=====================================================
+// EDIT
 exports.show_edit_lead = function(req, res, next) {
-
   return models.Lead.findOne({
     where: {
       id: req.params.lead_id
@@ -50,7 +52,6 @@ exports.show_edit_lead = function(req, res, next) {
 }
 
 exports.edit_lead = function(req, res, next) {
-
   return models.Lead.update({
     email:  req.body.lead_email
   }, {
@@ -63,4 +64,13 @@ exports.edit_lead = function(req, res, next) {
 }
 
 //=====================================================
-// 
+// DELETE
+exports.delete_lead = function(req,res,next) {
+  return models.Lead.destroy({
+    where: {
+      id: req.params.lead_id
+    }
+  }).then(result =>{
+    res.redirect('/leads');
+  })
+}
