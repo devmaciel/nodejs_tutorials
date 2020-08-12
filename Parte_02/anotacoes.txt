@@ -102,3 +102,15 @@ criação de script com sequelize, vai executar script pra criar as pastas.
 
 ---------------------------------
 
+PASSPORTJS
+
+aqui é um package de user autentication, que vamos utilizar
+no nosso sistema de login
+
+  npm install passport
+
+aqui pra local auth da database, encrypt, validação,
+trabalhar com session, error messages de login
+
+  npm install passport passport-local bcrypt validator express-session connect-flash --save
+
