@@ -3,6 +3,11 @@ var router = express.Router();
 
 //Require de onde está a lógica das rotas.
 let landing = require('../controllers/landing');
+let user = require('../controllers/user');
+
+//LOGIN
+router.get('/login', user.show_login);
+router.get('/signup', user.show_signup);
 
 /* GET home page. */
 router.get('/', landing.get_landing);

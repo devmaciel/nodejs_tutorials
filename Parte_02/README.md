@@ -1,0 +1,2 @@
+**Atenção**
+Aqui são os meus arquivos, porém existe o código completo [Aqui](https://github.com/buzz-software/expressjs-mvp-landing-page "Aqui") no caso, o repositório original do autor, então pode ser que tenha coisas corrigidas ou não específicadas na aula.
