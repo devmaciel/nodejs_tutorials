@@ -1,6 +1,6 @@
 # **NodeJS Beginner Só Q N**
 
-playlist de aulas[ freeCodeCamp](https://www.youtube.com/playlist?list=PLWKjhJtqVAbmGQoa3vFjeRbRADAOC9drk " freeCodeCamp") de nodejs.
+playlist de aulas <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbmGQoa3vFjeRbRADAOC9drk" target="_blank" rel="noopener"><span>freeCodeCamp</span></a> de nodejs.
 <br>
 **Complexidade** = *{facil: '1', intermediário: '2', dificil: '3', muitoDificil: '4', extremamenteDificil: '5'}*
 
