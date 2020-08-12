@@ -6,7 +6,7 @@ const models = require('../models');
 //=====================================================
 //Landing Page
 exports.get_landing = function(req, res, next) {
-  res.render('landing', { title: 'Curso ExpressJS & NodeJS' });
+  res.render('landing', { title: 'Curso ExpressJS & NodeJS', user: req.user });
 }
 
 exports.submit_lead = function(req, res, next) {
