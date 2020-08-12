@@ -1,6 +1,19 @@
-extends ../layout
-
-block content
-  form(action="/lead/" +lead.id+ "/edit" , method="POST")
-    input(type="email", name="lead_email", placeholder="Email", value="lead.email")
-    button(type="submit") Salvar
+doctype html
+html(lang='pt-br')
+  include ../common/head.pug
+  +head("Editar Lead")
+  body
+    header
+      include ../common/navbar.pug
+      +navbar()
+      .container
+        .row.align-items-center
+          .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
+            h1 Editar Lead
+            form(action="/lead/"+lead.id+"/edit", method="POST")
+              .input-group.mb-3
+                input(name="lead_email", type="email", placeholder="Email", value=lead.email).form-control
+                .input-group-append
+                  button(type="submit").btn.btn-primary Salvar
+    include ../common/footer.pug
+    +footer()

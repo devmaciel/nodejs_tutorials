@@ -7,8 +7,8 @@ html(lang='pt-br')
       include common/navbar.pug
       +navbar()
       .container
-        .row
-          .col-md-6
+        .row.align-items-center
+          .col-md-6.order-md-1.text-center.text-md-left.pr-md5
             h1.mb-3 Landing Page Mínima
             p.lead Este tutorial ensina como construir uma aplicação web com NodeJS.
             p.lead.mb-4 Aprenda como lançar uma landing page e começa a coletar leads.
@@ -17,26 +17,6 @@ html(lang='pt-br')
                 input(type="email", name="lead_email", placeholder="Email").form-control
                 .input-group-append
                   button(type="submit").btn.btn-primary Enviar
-        .row
-          .col-md-6
-            if leads
-              h1 Leads
-              table.table
-                thead
-                  tr
-                    th(scop="col") Email
-                    th(scope="col") Ações
-                    th(scope="col") 
-                  tr
-                tbody
-                  for lead in leads
-                    tr(id=lead.id)
-                      td
-                        span #{lead.email}
-                      td
-                        a(href="/lead/" + lead.id) Detalhes
-                      td
-                        button(onclick=`deleteLead('${lead.id}')`).btn.btn-primary Deletar
     include common/footer.pug
     +footer()
     script (src='/javascript/leads.js')
