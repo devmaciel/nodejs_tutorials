@@ -1,19 +1,24 @@
-extends layout
-
-block content
-  h1= title
-  p Bem vindo ao #{title}
-  form(action="/", method="POST")
-    input(type="email", name="lead_email", placeholder="Email")
-    button(type="submit") Enviar
-  if leads
-    h1 Leads
-    for lead in leads
-      p(id=lead.id)
-        span #{lead.email}
-        | 
-        a(href="/lead/" + lead.id) Detalhes
-        | 
-        button(onclick=`deleteLead('${lead.id}')`) Deletar
-  script (src='https://code.jquery.com/jquery-3.5.1.min.js')
-  script (src='/javascript/leads.js')
+doctype html
+html(lang='pt-br')
+  include common/head.pug 
+  +head("Inicial MVP")
+  body
+    h1= title
+    p Bem vindo ao #{title}
+    form(action="/", method="POST")
+      input(type="email", name="lead_email", placeholder="Email")
+      button(type="submit") Enviar
+    if leads
+      h1 Leads
+      for lead in leads
+        p(id=lead.id)
+          span #{lead.email}
+          | 
+          a(href="/lead/" + lead.id) Detalhes
+          | 
+          button(onclick=`deleteLead('${lead.id}')`) Deletar
+    
+    
+    include common/footer.pug
+    +footer()
+    script (src='/javascript/leads.js')
