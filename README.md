@@ -1,11 +1,12 @@
 # **NodeJS Beginner Só Q N**
 
 playlist de aulas[ freeCodeCamp](https://www.youtube.com/playlist?list=PLWKjhJtqVAbmGQoa3vFjeRbRADAOC9drk " freeCodeCamp") de nodejs.
-
-
-*Learn Node.js - Full Tutorial for Beginners
 <br>
-Express.js & Node.js Course for Beginners - Full Tutorial
+**Complexidade** = *{facil: '1', intermediário: '2', dificil: '3', muitoDificil: '4', extremamenteDificil: '5'}*
+
+*Learn Node.js - Full Tutorial for Beginners  (**2**)
+<br>
+Express.js & Node.js Course for Beginners - Full Tutorial (**5**)
 <br>
 Build a Node.js API - tutorial
 <br>
