@@ -6,6 +6,9 @@ const passport = require("passport");
 const myPassport = require('../passport_setup')(passport);
 let flash = require('connect-flash');
 
+const { isEmpty } = require('lodash');
+const { validateUser } = require('../validators/signup');
+
 const generateHash = function(password){
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null)
 }
@@ -16,23 +19,35 @@ exports.show_login = function(req,res,nex) {
 }
 
 exports.show_signup = function(req,res,nex) {
-    res.render('user/signup', { formData: {}, erros: {} });
+    res.render('user/signup', { formData: req.body, erros: {} });
+}
+
+//RE RENDER FUNCTION
+const rerender_signup = function(errors,req,res,nex) {
+    res.render('user/signup', { formData: {}, erros: errors });
 }
 
 //==================================
 // POST
 // utilizar package do passportjs pra autenticação
 exports.signup = function(req,res,nex) {
-    const newUser = models.User.build({
-        email: req.body.email,
-        password: generateHash(req.body.password)
-    });
-    return newUser.save().then(result =>{
-        passport.authenticate('local', {
-            successRedirect: "/",
-            failureRedirect: "/signup",
-            failureFlash: true
-        })(req,res,next);
+    let errors = {};
+    return validateUser(errors, req).then(errors=>{
+        if(!isEmpty(errors)){
+            rerender_signup(erros,req,res,next);
+        } else {
+            const newUser = models.User.build({
+                email: req.body.email,
+                password: generateHash(req.body.password)
+            });
+            return newUser.save().then(result =>{
+                passport.authenticate('local', {
+                    successRedirect: "/",
+                    failureRedirect: "/signup",
+                    failureFlash: true
+                })(req,res,next);
+            })
+        }
     })
 }
 
