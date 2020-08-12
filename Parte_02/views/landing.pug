@@ -3,22 +3,40 @@ html(lang='pt-br')
   include common/head.pug 
   +head("Inicial MVP")
   body
-    h1= title
-    p Bem vindo ao #{title}
-    form(action="/", method="POST")
-      input(type="email", name="lead_email", placeholder="Email")
-      button(type="submit") Enviar
-    if leads
-      h1 Leads
-      for lead in leads
-        p(id=lead.id)
-          span #{lead.email}
-          | 
-          a(href="/lead/" + lead.id) Detalhes
-          | 
-          button(onclick=`deleteLead('${lead.id}')`) Deletar
-    
-    
+    header
+      include common/navbar.pug
+      +navbar()
+      .container
+        .row
+          .col-md-6
+            h1.mb-3 Landing Page Mínima
+            p.lead Este tutorial ensina como construir uma aplicação web com NodeJS.
+            p.lead.mb-4 Aprenda como lançar uma landing page e começa a coletar leads.
+            form(action="/", method="POST")
+              .input-group.mb-3
+                input(type="email", name="lead_email", placeholder="Email").form-control
+                .input-group-append
+                  button(type="submit").btn.btn-primary Enviar
+        .row
+          .col-md-6
+            if leads
+              h1 Leads
+              table.table
+                thead
+                  tr
+                    th(scop="col") Email
+                    th(scope="col") Ações
+                    th(scope="col") 
+                  tr
+                tbody
+                  for lead in leads
+                    tr(id=lead.id)
+                      td
+                        span #{lead.email}
+                      td
+                        a(href="/lead/" + lead.id) Detalhes
+                      td
+                        button(onclick=`deleteLead('${lead.id}')`).btn.btn-primary Deletar
     include common/footer.pug
     +footer()
     script (src='/javascript/leads.js')
