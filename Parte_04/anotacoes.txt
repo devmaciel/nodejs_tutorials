@@ -8,6 +8,7 @@ com a aula.
     npm install request-promise 
     npm install cheerio
     npm install cli-table
+    npm install request
 
 cheerio faz algo parecido como jquery, para nevegar facilita.
 assim como cli-table, facilita visualizar, já que não vamos
