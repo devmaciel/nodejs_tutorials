@@ -41,6 +41,9 @@ ou direto com driver do nodejs.
 
 a forma que ele faz pra conectar no mongodb é deprecated, por que era no mlab..
 então existe outras formas, porém ainda funciona.
+
+OBS: o export da conexão com a database fica na config, então criei um arquivo de exemplo.
+só colocar como 'db.js' e botar as credenciais, user/senha/database pra conectar no atlas.
 ---------------------------------------------------
 
 
