@@ -19,5 +19,29 @@ Iniciando server
 POSTMAN
 
 vamos utilizar o postman para testar nossas requisições http.
+entao com body-parser vamos conseguir testar certinho.
+
+vamos passar aqui no caso uma x-www-form-urlencoded (body)
+    POST/ localhost:8000/notes
+    key: title, value:...
+    key: text, value:...
 
 ----------------------------------------
+MONGODB - mLab
+
+aqui ele utiliza um online para teste.
+https://mlab.com porém o video é antigo, e sabemos que agora
+está com o mongodb atlas.
+
+então é aquela história, dos cluster etc, que caso não saiba
+é melhor introduzir antes de continuar aqui.
+
+podemos utilizar várias formas, na desktop tem o mongdb compass que é uma GUI.
+ou direto com driver do nodejs.
+
+a forma que ele faz pra conectar no mongodb é deprecated, por que era no mlab..
+então existe outras formas, porém ainda funciona.
+---------------------------------------------------
+
+
+

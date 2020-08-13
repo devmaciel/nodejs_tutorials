@@ -2,7 +2,7 @@
   "name": "parte_03",
   "version": "1.0.0",
   "description": "rest_api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js"
   },
