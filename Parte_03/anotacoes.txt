@@ -1,0 +1,23 @@
+NodeJS RestAPI
+
+Iniciamos nosso projeto, vamos precisar do
+ExpressJS que é o principal framework que vamos utilizar
+MongoDB é o nosso nosql database
+Body-parser é uma dependencia muito importante para as req/res.
+Nodemon é nosso server dev.
+
+    npm init
+    npm install --save express mongodb body-parser
+    npm install --save-dev nodemon
+
+------------------------------------
+Iniciando server
+
+    npm run dev OU nodemon
+    
+---------------------------------------
+POSTMAN
+
+vamos utilizar o postman para testar nossas requisições http.
+
+----------------------------------------
