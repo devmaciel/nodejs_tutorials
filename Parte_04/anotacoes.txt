@@ -1,0 +1,15 @@
+// NodeJS | Web Scraping
+--------------------------------------
+Request Promisses | Cheerio
+
+não sei se já existe nas novas versões, mas vamos seguir
+com a aula.
+
+    npm install request-promise 
+    npm install cheerio
+    npm install cli-table
+
+cheerio faz algo parecido como jquery, para nevegar facilita.
+assim como cli-table, facilita visualizar, já que não vamos
+fazer quase nada de front etc.
+--------------------------------------
