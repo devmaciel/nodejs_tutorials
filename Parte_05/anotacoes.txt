@@ -23,6 +23,16 @@ API(Application Programming Interface)
 ---No standard way of writing APIs
 ---REST provides guidelines
 ---CRUD Operations (create/read/update/delete)
+
+Server Static Content (html/js/css/images)
+---Create a public folder under root
+---Create an html file
+---Configure express to serve static content
+
+Route (mount to express.js)
+---GET request
+---Request parameters
+---Query parameters
 ====================================================
 
 INSTALAÇÃO 
@@ -30,7 +40,7 @@ INSTALAÇÃO
 ---IDE (vamos utilizar vscode. duuh)
 ---NodeJS / NPM (já temos u-u)
 ---Mongo Database (já fizemos um cluster e database na aula passada)
----REST Client (rest cansado, testa com postman mesmo)
+---REST Client (rest cansado, testa com postman mesmo, o professor utiliza o 'insomnia')
 ---Robo 3T for MongoDB (essa é nova)
 
 =======================================================
@@ -44,6 +54,7 @@ EXPRESS
 GETTING STARTED
 
     npm init
+    npm install nodemon --save-dev
     npm install express
 
     //começar server
