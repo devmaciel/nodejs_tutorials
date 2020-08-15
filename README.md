@@ -10,7 +10,7 @@ Express.js & Node.js Course for Beginners - Full Tutorial (**5**)
 <br>
 Build a Node.js API - tutorial (**2**)
 <br>
-Web Scraping with Node.js
+Web Scraping with Node.js (**3**)
 <br>
 How to Build a RESTful API using Node, Express, and Mongo
 <br>

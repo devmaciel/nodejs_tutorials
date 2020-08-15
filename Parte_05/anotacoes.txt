@@ -1,0 +1,49 @@
+//--------------------------------------------
+// How to Build a RESTful API using Node, Express, and Mongo
+
+Aqui ele faz uma apresentação gigante, sobre os conceitos.
+pensei em traduzir, mas é melhor deixar em ingles para pegar
+os nomes em ingles, e nessa altura, inglês é o menos dos problemas.
+
+HTTP (HyperText Transfer Protocol)
+---HTTP is stateless
+---TCP/IP is not stateless
+---Payload(body/data) can be anything as long as it is defined in header.
+
+REST(Representational State Transfer)
+---Architetuctural Pattern with design guidelines
+---HTTP is usually the underlying Protocol
+---Use HTTP methods explicitly
+---Every RESTful resource has a unique ID
+
+API(Application Programming Interface)
+---Defines server-side functions that are supported
+---Where requests should be made
+---Format of the request and response
+---No standard way of writing APIs
+---REST provides guidelines
+---CRUD Operations (create/read/update/delete)
+====================================================
+
+INSTALAÇÃO 
+
+---IDE (vamos utilizar vscode. duuh)
+---NodeJS / NPM (já temos u-u)
+---Mongo Database (já fizemos um cluster e database na aula passada)
+---REST Client (rest cansado, testa com postman mesmo)
+---Robo 3T for MongoDB (essa é nova)
+
+=======================================================
+
+EXPRESS
+---Install Dependency
+---Reference the express library
+---Create express Application instance
+
+------------------------------------------------
+GETTING STARTED
+
+    npm init
+    npm install express
+
+-------------------------------------------
