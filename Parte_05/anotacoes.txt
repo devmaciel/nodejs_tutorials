@@ -46,4 +46,7 @@ GETTING STARTED
     npm init
     npm install express
 
+    //começar server
+    npm start
+
 -------------------------------------------
