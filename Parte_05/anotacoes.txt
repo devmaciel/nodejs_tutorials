@@ -83,4 +83,7 @@ GETTING STARTED
     //começar server
     npm start
 
+    //site: now.sh, deploy com NodeJS, então getting starter pelo site.
+    now
+
 -------------------------------------------
