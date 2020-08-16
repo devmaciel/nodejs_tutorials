@@ -3,6 +3,8 @@ let express = require('express');
 let app = express();
 let personRoute = require('./routes/person');
 let path = require('path');
+let bodyParser = require('body-parser');
+let customerRoute = require('./routes/customer');
 
 //Middlewares
 app.use((req,res,next) =>{
@@ -11,7 +13,9 @@ app.use((req,res,next) =>{
     next();
 });
 app.use(personRoute);
+app.use(customerRoute);
 app.use(express.static('public'));
+app.use(bodyParser.json());
 
 //handler 404
 app.use((req,res,next) =>{

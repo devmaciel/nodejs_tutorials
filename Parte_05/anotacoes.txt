@@ -44,6 +44,16 @@ Middleware(functions that execute serially)
 Error Pages(custom handlers)
 ---404 not found handler
 ---500 internal server error
+
+Mongoose (for mongodb)
+---Install Dependency
+---Reference Mongoose
+---CRUD API
+
+Cloud Deployment(now.sh)
+---Set PORT in scripts
+---Deploy to now
+---Test deployment in browser / insomnia
 ====================================================
 
 INSTALAÇÃO 
@@ -66,7 +76,9 @@ GETTING STARTED
 
     npm init
     npm install nodemon --save-dev
+    npm install body-parser
     npm install express
+    npm install mongoose
 
     //começar server
     npm start
