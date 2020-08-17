@@ -1,0 +1,25 @@
+Aqui é um projeto que é como se fosse uma "mágica"
+na verdade, você vai inserir na database um nome e uma card.
+
+e quando digita na url, o nome que foi cadastrado vai mostrar a card.
+e também tem comandos pra url, pra deletar etc, que qualquer um pode fazer
+e não é seguro, mas se ta na playlist, vamos ver pra ver se aprendemos algo novo
+ou simplesmente só praticar mesmo.
+
+praticamente isto, no video ele mostra como faz..
+--------------
+
+Então vamos pegar a pasta deles com as imagens mesmo.
+e o secret.html
+----------------
+
+    npm init
+    npm install express body-parser mongodb
+
+===========================================================
+
+ele faz um app usando heroku. precisa do heroku CLI.
+o resto tem como inciar no site.
+
+-------------------------------------------------------------------
+    
