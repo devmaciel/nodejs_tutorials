@@ -1,0 +1,8 @@
+Vamos utilizar o CHATKIT só que não, chatkit acabou e é preciso migrar
+pra, talkjs.
+https://talkjs.com/resources/pusher-chatkit-alternative/
+
+então essa video aula praticamente é obsoleta.
+
+========================
+
