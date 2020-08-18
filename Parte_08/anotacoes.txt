@@ -1,0 +1,44 @@
+//=======================================================================
+// Getting Started with Node.js - Full Tutorial
+
+Aqui é outro getting started grande... mais recente que o parte01.
+porém é bem conceitual, sobre o core do nodejs como funciona.
+----------------------
+
+Aqui pra usuários de MAC ele fala também do Homebrew e NVM.
+---------------------
+
+sobre node/npm/npx and javascript engine(v8)
+e outras coisas sobre javascript, loong time.
+
+fala sobre as coisas que pode fazer exemplo, no console.
+m = [];
+e digita 'm.' é como se fosse um helper de todas as funções.
+e novamente, bastante sobre javascript, porque faz parte do node. como já vimos.
+
+assim sobre o node cli. node -h, o helper.
+sobre o 'process.' utilizamos por exemplo, no process.env
+mais js. (arguments).. do node, que pega o wraping core do nodejs.
+que apresenta os wraping;lifecycle;return..etc. mais especificamente func(exports,require,module,_filename,_dirname){}
+fala sobre module.exports
+Depois entramos no npm init
+..modules novamente, e node_modules.
+sobre npm publish, pra fazer seus próprios packages.
+depois sobre express
+sobre scripts do package json, dependencies etc.
+sobre createserver/listen e os metodo http
+promisses
+nodemon
+child process
+utils 
+eventEmmiter
+Streams
+sequelize
+-use--strict um pouco de typescript/debugger/babel sobre o uso do -use--strict. q é uma proteção
+pra proteger as var.
+
+
+----------------------
+
+
+

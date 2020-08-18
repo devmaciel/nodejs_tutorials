@@ -20,6 +20,6 @@ e o secret.html
 
 ele faz um app usando heroku. precisa do heroku CLI.
 o resto tem como inciar no site.
-
+    heroku addons: create mongolab //aqui é pra database mongo
 -------------------------------------------------------------------
     
